@@ -4,15 +4,16 @@ public class Clint {
         File file1 = new File(76);
         File file2 = new File(78);
 
-        File sub = new File();
-        File main = new File();
+        Elements sub = new Elements();
+        Elements main = new Elements();
 
         main.add(sub);
-        root.add(file0);
-        root.add(file1);
-        dir1.add(file2);
+        main.add(file0);
+        main.add(file1);
+        sub.add(file2);
 
-        System.out.println(main.getSize());
+        System.out.println(main.getsize());
 
     }
 }
+
